@@ -4,6 +4,4 @@
 2. 启动`quote-stream`（流生产方-函数式写法）和`stream-service`（流消费方-SpringMVC写法）
 3. 访问`http://localhost:8080/quotes`
 
-<video id="video" controls="" preload="none">
-    <source id="mp4" src="https://github.com/jxnu-liguobin/quote-webflux-demo/blob/master/%E9%A2%84%E8%A7%88.mp4" type="video/mp4">
-</video>
+![](1606229281652.gif)
