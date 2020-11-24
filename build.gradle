@@ -1,0 +1,53 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.2.RELEASE'
+    }
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
+        }
+        mavenCentral()
+
+    }
+    // 构建时所需要的插件或者是其他的依赖
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+
+}
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
+        }
+        mavenCentral()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom 'org.springframework.boot:spring-boot-starter-parent:2.2.2.RELEASE'
+        }
+    }
+    dependencies {
+        compile('org.springframework.boot:spring-boot-starter-webflux')
+        compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
+        compile('org.springframework.boot:spring-boot-devtools')
+        compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+        compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+        compile('org.mongodb:mongodb-driver-reactivestreams')
+        compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        testCompile('org.springframework.boot:spring-boot-starter-test')
+    }
+}

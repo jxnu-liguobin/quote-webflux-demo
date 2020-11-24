@@ -1,0 +1,4 @@
+rootProject.name = 'quote-webflux-demo'
+include 'stream-service'
+include 'quote-stream'
+
