@@ -4,4 +4,6 @@
 2. 启动`quote-stream`（流生产方-函数式写法）和`stream-service`（流消费方-SpringMVC写法）
 3. 访问`http://localhost:8080/quotes`
 
+![](static.png)
+
 ![](1606229281652.gif)
