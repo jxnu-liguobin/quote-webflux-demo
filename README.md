@@ -4,6 +4,4 @@
 2. 启动`quote-stream`（流生产方-函数式写法）和`stream-service`（流消费方-SpringMVC写法）
 3. 访问`http://localhost:8080/quotes`
 
-<video id="video" controls="" preload="none" poster="预览图.png">
-      <source id="mp4" src="预览.mp4" type="video/mp4">
-      </video>
+<iframe height=498 width=510 src="预览.mp4"> </iframe>
