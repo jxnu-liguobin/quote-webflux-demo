@@ -1,5 +1,6 @@
-package io.github.dreamylost.stream.portfolio;
+package io.github.dreamylost.stream;
 
+import io.github.dreamylost.stream.user.UserRepository;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

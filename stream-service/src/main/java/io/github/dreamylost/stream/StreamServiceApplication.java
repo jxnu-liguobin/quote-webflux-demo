@@ -1,7 +1,7 @@
 package io.github.dreamylost.stream;
 
-import io.github.dreamylost.stream.portfolio.User;
-import io.github.dreamylost.stream.portfolio.UserRepository;
+import io.github.dreamylost.stream.user.User;
+import io.github.dreamylost.stream.user.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

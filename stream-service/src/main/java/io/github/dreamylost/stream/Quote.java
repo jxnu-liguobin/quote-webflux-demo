@@ -1,4 +1,4 @@
-package io.github.dreamylost.stream.portfolio;
+package io.github.dreamylost.stream;
 
 import java.math.BigDecimal;
 import java.math.MathContext;

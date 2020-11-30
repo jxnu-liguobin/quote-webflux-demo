@@ -1,4 +1,4 @@
-package io.github.dreamylost.stream.portfolio;
+package io.github.dreamylost.stream.user;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -17,6 +17,12 @@ public class User {
     private String github;
 
     private String name;
+
+    public User(String id, String github, String name) {
+        this.id = id;
+        this.github = github;
+        this.name = name;
+    }
 
     public User() {
     }
